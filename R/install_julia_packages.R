@@ -4,6 +4,9 @@ install_julia_packages <- function(packages){
   #' @examples
   #' packages <- c("WildBootTests", "FixedEffectModels", "Random")
   #' install_julia_packages(packages)
+  #' @export
+
+
 
   JuliaConnectoR::juliaEval("using Pkg")
 
