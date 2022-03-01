@@ -1,12 +1,15 @@
 Package: JuliaConnectoR.utils
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Utility Functions for the JuliaConnectoR
+Version: 0.0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Alexander", "Fischer", , "alexander-fischer1801@t-online.de", role = c("aut", "cre"))
+Description: Utility functions for the JuliaConnectoR package for developers and users. Helps users of R packages that 
+             link R and Julia via JuliaConnectoR to install Julia and Julia dependencies, to connect R and Julia, to set the number of threads Julia 
+             uses from within R and to set a Julia seed from R. Helps developers to set up a github actions workflow to run both R and Julia.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Depends: JuliaConnectoR, 
+         usethis, 
+         JuliaCall
