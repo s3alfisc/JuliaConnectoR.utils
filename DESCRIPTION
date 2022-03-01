@@ -12,4 +12,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Depends: JuliaConnectoR, 
          usethis, 
-         JuliaCall
+         JuliaCall, 
+         stringr, 
+         utils
