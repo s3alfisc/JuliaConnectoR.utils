@@ -28,4 +28,5 @@ install_julia() # install Julia
 connect_julia_r() # instructions to connect Julia and R
 install_julia_packages("WildBootTests.jl") # install WildBootTests.jl
 set_julia_ntreads() # instructions to set nthreads for Julia
+check_julia_version(r_pkg = "fwildclusterboot", julia_pkg = "WildBootTests.jl")
 ```
