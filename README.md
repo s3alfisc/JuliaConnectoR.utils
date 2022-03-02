@@ -4,6 +4,8 @@
 # JuliaConnectoR.utils
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/s3alfisc/JuliaConnectoR.utils/workflows/R-CMD-check/badge.svg)](https://github.com/s3alfisc/JuliaConnectoR.utils/actions)
 <!-- badges: end -->
 
 The goal of JuliaConnectoR.utils is to help developers and users who
@@ -24,9 +26,10 @@ devtools::install_github("s3alfisc/JuliaConnectoR.utils")
 ``` r
 library(JuliaConnectoR.utils)
 
-install_julia() # install Julia
-connect_julia_r() # instructions to connect Julia and R
-install_julia_packages("WildBootTests.jl") # install WildBootTests.jl
-set_julia_ntreads() # instructions to set nthreads for Julia
-check_julia_version(r_pkg = "fwildclusterboot", julia_pkg = "WildBootTests.jl")
+install_julia()
+connect_julia_r()
+devtools::install_github("s3alfisc/fwildclusterboot")
+install_julia_packages("WildBootTests.jl")
+check_julia_system_requirements("fwildclusterboot")
+set_julia_nthreads()
 ```

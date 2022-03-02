@@ -1,4 +1,4 @@
-connect_julia_R <- function(){
+connect_julia_r <- function(){
 
   #' Function to help connect Julia and R
   #' @export

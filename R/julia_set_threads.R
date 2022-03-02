@@ -1,4 +1,4 @@
-set_julia_ntreads <- function(){
+set_julia_nthreads <- function(){
 
   #' Helper function to set the number of threads for use in Julia
   #' @export
