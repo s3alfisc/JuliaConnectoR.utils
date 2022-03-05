@@ -43,7 +43,9 @@ check_julia_system_requirements <- function(r_pkg){
   }
 
   # need to drop .jl suffix else Julia.Pkg.status fails
-  julia_pkg_n <- stringr::str_sub(julia_pkg_n, end=-4)
+  if(stringr::str_sub(julia_pkg_n, start= -3) == ".jl"){
+    julia_pkg_n <- stringr::str_sub(julia_pkg_n, end=-4)
+  }
 
   # if there are any julia package requiremens ...
   if(length(n_julia_pkg) != 0){
