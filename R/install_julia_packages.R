@@ -10,7 +10,10 @@ install_julia_packages <- function(packages){
   #' @export
 
   # check if packages contain .jl suffix, if yes, delete it
-  packages <- stringr::str_sub(packages, end=-4)
+  pkg_end <- stringr::str_sub(packages, start=-3)
+  if(pkg_end == ".jl"){
+    packages <- stringr::str_sub(packages, end=-4)
+  }
 
   JuliaConnectoR::juliaEval("using Pkg")
 
